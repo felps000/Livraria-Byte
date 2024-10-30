@@ -17,6 +17,9 @@ public class LivrariaByte {
         sistema.adicionarFuncionario(funcionario1);
         sistema.adicionarFuncionario(funcionario2);
 
+        System.out.println("\n--- Listagem de Usuários Cadastrados ---");
+        sistema.listarUsuarios();
+
         System.out.println("\n--- Listagem de Funcionários Cadastrados ---");
         sistema.listarFuncionarios();
 
