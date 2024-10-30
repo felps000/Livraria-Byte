@@ -1,4 +1,4 @@
-package br.com.livrariaByte;
+package br.com.livrariaByte.model;
 
 public class Pessoa {
     protected String nomeCompleto;
@@ -9,6 +9,10 @@ public class Pessoa {
         this.nomeCompleto = nomeCompleto;
         this.telefone = telefone;
         this.endereco = endereco;
+    }
+
+    public String getNomeCompleto() {
+        return nomeCompleto;
     }
 
     public void exibirInformacoes() {

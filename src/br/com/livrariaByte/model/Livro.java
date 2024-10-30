@@ -1,20 +1,23 @@
-package br.com.livrariaByte;
+package br.com.livrariaByte.model;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class Livro {
     private String codigoLivro;
     private String titulo;
     private String autor;
     private String genero;
-    private List<Exemplar> exemplares;
+    private String editora;
+    private int anoPublicacao;
+    private ArrayList<Exemplar> exemplares;
 
-    public Livro(String codigoLivro, String titulo, String autor, String genero) {
+    public Livro(String codigoLivro, String titulo, String autor, String genero, String editora, int anoPublicacao) {
         this.codigoLivro = codigoLivro;
         this.titulo = titulo;
         this.autor = autor;
         this.genero = genero;
+        this.editora = editora;
+        this.anoPublicacao = anoPublicacao;
         this.exemplares = new ArrayList<>();
     }
 
@@ -26,7 +29,7 @@ public class Livro {
         exemplares.add(exemplar);
     }
 
-    public List<Exemplar> getExemplares() {
+    public ArrayList<Exemplar> getExemplares() {
         return exemplares;
     }
 
@@ -44,6 +47,8 @@ public class Livro {
         System.out.println("Título: " + titulo);
         System.out.println("Autor: " + autor);
         System.out.println("Gênero: " + genero);
+        System.out.println("Editora: " + editora);
+        System.out.println("Ano de Publicação: " + anoPublicacao);
     }
 
     public void listarExemplaresDisponiveis() {

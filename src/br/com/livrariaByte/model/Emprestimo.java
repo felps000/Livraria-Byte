@@ -1,4 +1,4 @@
-package br.com.livrariaByte;
+package br.com.livrariaByte.model;
 
 public class Emprestimo {
     private String codigoExemplar;
@@ -16,6 +16,8 @@ public class Emprestimo {
     public String getDataDevolucao() {
         return dataDevolucao;
     }
+
+    public void setDataDevolucao(String dataDevolucao) {
+        this.dataDevolucao = dataDevolucao;
+    }
 }
-
-

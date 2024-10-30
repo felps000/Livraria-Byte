@@ -1,14 +1,18 @@
-package br.com.livrariaByte;
+package br.com.livrariaByte.model;
+
+import java.time.LocalDate;
 
 public class Exemplar {
     private String codigoExemplar;
     private String estadoConservacao;
     private boolean disponivel;
+    private LocalDate dataAquisicao;
 
     public Exemplar(String codigoExemplar, String estadoConservacao) {
         this.codigoExemplar = codigoExemplar;
         this.estadoConservacao = estadoConservacao;
         this.disponivel = true;
+        this.dataAquisicao = LocalDate.now();
     }
 
     public String getCodigoExemplar() {
@@ -31,5 +35,6 @@ public class Exemplar {
         } else {
             System.out.println("Disponível: Não");
         }
+        System.out.println("Data de Aquisição: " + dataAquisicao);
     }
 }

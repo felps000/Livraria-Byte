@@ -1,4 +1,6 @@
-package br.com.livrariaByte;
+package br.com.livrariaByte.controller;
+
+import br.com.livrariaByte.model.*;
 
 import java.util.ArrayList;
 
@@ -47,13 +49,13 @@ public class SistemaBiblioteca {
 
     public void listarUsuarios() {
         for (Usuario usuario : usuarios) {
-            System.out.println("Número de Registro: " + usuario.getNumeroRegistro() + ", Nome: " + usuario.nomeCompleto);
+            System.out.println("Número de Registro: " + usuario.getNumeroRegistro() + ", Nome: " + usuario.getNomeCompleto());
         }
     }
 
     public void listarFuncionarios() {
         for (Funcionario funcionario : funcionarios) {
-            System.out.println("ID Funcional: " + funcionario.getIdFuncionario() + ", Nome: " + funcionario.nomeCompleto);
+            System.out.println("ID Funcional: " + funcionario.getIdFuncionario() + ", Nome: " + funcionario.getNomeCompleto());
         }
     }
 
@@ -119,5 +121,3 @@ public class SistemaBiblioteca {
         System.out.println("Total de Multas: R$" + totalMulta);
     }
 }
-
-

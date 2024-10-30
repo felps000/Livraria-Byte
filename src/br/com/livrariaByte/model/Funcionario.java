@@ -1,4 +1,4 @@
-package br.com.livrariaByte;
+package br.com.livrariaByte.model;
 
 public class Funcionario extends Pessoa {
     private String idFuncionario;
@@ -21,4 +21,3 @@ public class Funcionario extends Pessoa {
         System.out.println("Setor: " + setor);
     }
 }
-
