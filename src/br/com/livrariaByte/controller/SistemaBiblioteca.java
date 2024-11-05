@@ -18,6 +18,15 @@ public class SistemaBiblioteca {
         return null;
     }
 
+    public void exibirUsuario(String numeroRegistro) {
+        Usuario usuario = buscarUsuario(numeroRegistro);
+        if (usuario != null) {
+            usuario.exibirInformacoes();
+        } else {
+            System.out.println("Usuário não encontrado.");
+        }
+    }
+
     public Funcionario buscarFuncionario(String idFuncionario) {
         for (Funcionario funcionario : funcionarios) {
             if (funcionario.getIdFuncionario().equals(idFuncionario)) {
@@ -27,7 +36,7 @@ public class SistemaBiblioteca {
         return null;
     }
 
-    public void exibirFuncionarioId(String idFuncionario) {
+    public void exibirFuncionario(String idFuncionario) {
         Funcionario funcionario = buscarFuncionario(idFuncionario);
         if (funcionario != null) {
             funcionario.exibirInformacoes();
