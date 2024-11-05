@@ -8,12 +8,10 @@ public class LivrariaByte {
         SistemaBiblioteca sistema = new SistemaBiblioteca();
 
         // --- Cadastro de Usuários ---
-        System.out.println("\n--- Cadastro de Usuários ---");
         Usuario usuario = new Usuario("Felipe Rocha", "(11)94153-2005", "Rua Raul, 123", "U001");
         sistema.adicionarUsuario(usuario);
 
         // --- Cadastro de Funcionários ---
-        System.out.println("\n--- Cadastro de Funcionários ---");
         Funcionario funcionario1 = new Funcionario("Cristiano Gravino", "(11)96401-1011", "Rua das ruas, 699", "F001", "Atendimento");
         Funcionario funcionario2 = new Funcionario("Marcelo Lallo", "(11)98199-2713", "Rua Garantida, 24", "F002", "Caixa");
         sistema.adicionarFuncionario(funcionario1);
@@ -21,7 +19,7 @@ public class LivrariaByte {
 
         // --- Busca e exibição de um funcionário ---
         System.out.println("\n--- Buscando Funcionário ---");
-        sistema.exibirFuncionario("F001");
+        sistema.exibirFuncionario("F001"); // Exibe informações do funcionário com ID "F001"
 
         // --- Listagem de todos os usuários cadastrados ---
         System.out.println("\n--- Listagem de Usuários Cadastrados ---");
@@ -32,7 +30,6 @@ public class LivrariaByte {
         sistema.listarFuncionarios();
 
         // --- Cadastro de Livros e Exemplares ---
-        System.out.println("\n--- Cadastro de Livros e Exemplares ---");
         Livro livro = new Livro("LIV001", "O Senhor dos Anéis", "J.R.R. Tolkien", "Fantasia", "HarperCollins", 1954);
         Exemplar exemplar1 = new Exemplar("EX001", "Ótimo");
         Exemplar exemplar2 = new Exemplar("EX002", "Bom");
@@ -50,11 +47,11 @@ public class LivrariaByte {
 
         // --- Empréstimo de Livro ---
         System.out.println("\n--- Empréstimo de Livro ---");
-        sistema.realizarEmprestimo("U001", "LIV001", "11/12/2023");
+        sistema.realizarEmprestimo("U001", "LIV001", "11/12/2023"); // Realiza empréstimo para o usuário "U001"
 
         // --- Devolução de Livro ---
         System.out.println("\n--- Devolução de Livro ---");
-        sistema.realizarDevolucao("U001", "EX001", "27/12/2023");
+        sistema.realizarDevolucao("U001", "EX001", "27/12/2023"); // Devolve o exemplar "EX001"
 
         // --- Exibição de informações do usuário após operações ---
         System.out.println("\n--- Informações do Usuário Após Empréstimo e Devolução ---");
