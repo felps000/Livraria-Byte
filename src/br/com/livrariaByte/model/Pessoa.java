@@ -1,6 +1,6 @@
 package br.com.livrariaByte.model;
 
-public class Pessoa {
+public abstract class Pessoa {
     protected String nomeCompleto;
     protected String telefone;
     protected String endereco;

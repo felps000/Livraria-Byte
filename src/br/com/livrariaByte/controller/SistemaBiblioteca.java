@@ -27,6 +27,15 @@ public class SistemaBiblioteca {
         return null;
     }
 
+    public void exibirFuncionarioId(String idFuncionario) {
+        Funcionario funcionario = buscarFuncionario(idFuncionario);
+        if (funcionario != null) {
+            funcionario.exibirInformacoes();
+        } else {
+            System.out.println("Funcionário não encontrado.");
+        }
+    }
+
     public Livro buscarLivro(String codigoLivro) {
         for (Livro livro : livros) {
             if (livro.getCodigoLivro().equals(codigoLivro)) {
